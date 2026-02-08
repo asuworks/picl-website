@@ -3,8 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PICL — Snap it, Say it, Sell it</title>
-  <meta name="description" content="Turn photos and voice memos into marketplace listings with AI.">
+  <title>PICL — AI Listing Generator for Android | Photos Into Selling Listings</title>
+  <meta name="description" content="PICL turns photos and voice memos into ready-to-post marketplace listings using Gemini AI. Capture items, generate titles, descriptions, and prices, then export to Google Sheets. Free Android app.">
+  <meta name="keywords" content="PICL, AI listing generator, marketplace listing app, sell items app, Craigslist listing tool, Facebook Marketplace helper, garage sale app, reseller tool, Gemini AI, Google Sheets export, voice to listing, photo to listing, Android selling app, batch listing creator, offline listing app">
+  <meta name="author" content="Anton Suharev">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://asuworks.github.io/picl-website/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PICL — AI Listing Generator for Android">
+  <meta property="og:description" content="Turn photos and voice memos into marketplace listings with Gemini AI. Capture, process, export. Free for Android.">
+  <meta property="og:image" content="https://asuworks.github.io/picl-website/assets/branding/pickle_camera.png">
+  <meta property="og:url" content="https://asuworks.github.io/picl-website/">
+  <meta property="og:site_name" content="PICL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PICL — AI Listing Generator for Android">
+  <meta name="twitter:description" content="Turn photos and voice memos into marketplace listings with Gemini AI. Free for Android.">
+  <meta name="twitter:image" content="https://asuworks.github.io/picl-website/assets/branding/pickle_camera.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "PICL",
+    "alternateName": "Photos Into Selling Listings",
+    "description": "AI-powered listing generator that turns photos and voice memos into marketplace listings using Gemini AI. Export to Google Sheets and Drive.",
+    "operatingSystem": "Android",
+    "applicationCategory": "ProductivityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Anton Suharev", "email": "suharev.works@gmail.com" },
+    "image": "https://asuworks.github.io/picl-website/assets/branding/pickle_camera.png"
+  }
+  </script>
+
   <link rel="icon" type="image/png" href="assets/branding/pickle_logo_small.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +64,13 @@
       </a>
       <div class="nav-right">
         <ul class="nav-links" id="navLinks">
-          <li><a href="#how">How It Works</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="#setup">Setup</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#export">Export</a></li>
           <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="#support">Support ❤️</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -64,6 +103,74 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.218-.72.61-.92zM14.5 12.707l2.55 2.55-8.1 4.63 5.55-7.18zM17.8 9.95L14.5 11.293 8.95 4.113l8.1 4.63.75.43zM21.78 11.29c.48.28.72.68.72 1.11s-.24.83-.72 1.11l-2.58 1.49-2.93-2.93 2.93-2.93 2.58 1.15z"/></svg>
         Get it on Google Play
       </a>
+    </div>
+  </section>
+
+  <section class="highlights" id="features">
+    <div class="container">
+      <h2>Built to save you time</h2>
+      <p>Less typing, more selling.</p>
+      <div class="highlights-grid">
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+          </div>
+          <h3>Photo and voice capture</h3>
+          <p>Photograph the item. Record a voice note with details the camera can't see. No keyboard needed.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>
+          </div>
+          <h3>AI listing generation</h3>
+          <p>Gemini sees your photos, hears your voice, and generates title, description, price, condition, and category.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Batch processing</h3>
+          <p>Capture 50 items at a garage sale. Process them all at once. Export every listing in a single tap.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          </div>
+          <h3>Custom AI instructions</h3>
+          <p>Custom AI instructions let you set the tone. Casual, detailed, whatever fits your marketplace.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>Offline mode</h3>
+          <p>Capture at the storage unit, the yard sale, anywhere with no signal. Process later when you're back online.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3>Private by design</h3>
+          <p>No servers, no analytics, no tracking. Everything goes straight to your Google Drive and Sheets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section" id="setup">
+    <div class="container info-content">
+      <h2>Getting your Gemini API key</h2>
+      <p>PICL uses Google's Gemini AI to generate listings. You'll need a free API key to get started.</p>
+      <ol>
+        <li>Go to <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a></li>
+        <li>Sign in with your Google account</li>
+        <li>Click <strong>Create API key</strong></li>
+        <li>Select any Google Cloud project (or create a new one)</li>
+        <li>Copy the generated key</li>
+        <li>Open PICL, go to <strong>Settings</strong>, and paste your key</li>
+      </ol>
+      <p>The free tier is generous and sufficient for personal use. Your key is stored encrypted on your device using Android's secure keystore and is only sent directly to Google's API — never to us or any third party.</p>
+      <p>You can check your usage and quota anytime at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">AI Studio</a>.</p>
     </div>
   </section>
 
@@ -106,63 +213,33 @@
     </div>
   </section>
 
-  <section class="highlights" id="features">
-    <div class="container">
-      <h2>Built to save you time</h2>
-      <p>Less typing, more selling.</p>
-      <div class="highlights-grid">
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- crosshair / point -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
-          </div>
-          <h3>Photo and voice capture</h3>
-          <p>Photograph the item. Record a voice note with details the camera can't see. No keyboard needed.</p>
-        </div>
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- sparkles / AI -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>
-          </div>
-          <h3>AI listing generation</h3>
-          <p>Gemini sees your photos, hears your voice, and generates title, description, price, condition, and category.</p>
-        </div>
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- layers / batch -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-          </div>
-          <h3>Batch processing</h3>
-          <p>Capture 50 items at a garage sale. Process them all at once. Export every listing in a single tap.</p>
-        </div>
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- sliders / customize -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
-          </div>
-          <h3>Custom AI instructions</h3>
-          <p>Custom AI instructions let you set the tone. Casual, detailed, whatever fits your marketplace.</p>
-        </div>
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- wifi-off / offline -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-          </div>
-          <h3>Offline mode</h3>
-          <p>Capture at the storage unit, the yard sale, anywhere with no signal. Process later when you're back online.</p>
-        </div>
-        <div class="hl">
-          <div class="hl-icon">
-            <!-- shield / privacy -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-          </div>
-          <h3>Private by design</h3>
-          <p>No servers, no analytics, no tracking. Everything goes straight to your Google Drive and Sheets.</p>
-        </div>
-      </div>
+  <section class="info-section alt" id="export">
+    <div class="container info-content">
+      <h2>Google Drive export</h2>
+      <p>When you export listings, PICL uploads images to Google Drive and appends listing data to a Google Sheets spreadsheet — all within your own Google account.</p>
+      <h3>Minimal permissions</h3>
+      <p>PICL requests only the <code>drive.file</code> scope. This means it can <strong>only access files it created</strong> — it cannot read, modify, or even see any other files in your Drive. This is the most restrictive Drive scope available.</p>
+      <h3>What gets created</h3>
+      <ul>
+        <li>A <strong>PICL</strong> folder in your Drive containing uploaded item photos</li>
+        <li>A <strong>PICL Listings</strong> spreadsheet with columns: title, description, price, condition, category, city, neighborhood, zip, and image links</li>
+      </ul>
+      <h3>No data collection</h3>
+      <p>PICL has no backend servers. We do not collect, store, or have access to any of your data — not your photos, not your listings, not your Google account information. All communication happens directly between your device and Google's APIs over encrypted HTTPS connections. Your Google credentials are managed entirely by Google's sign-in SDK and are never stored or transmitted by PICL.</p>
+      <p>You can revoke access at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
     </div>
   </section>
 
+  <section class="info-section" id="support">
+    <div class="container info-content" style="text-align: center;">
+      <h2>Support PICL ❤️</h2>
+      <p>If PICL saves you time, consider buying the developer a coffee.</p>
+      <div class="support-links">
+        <a href="https://ko-fi.com/piclapp" target="_blank" rel="noopener" class="support-btn">Ko-fi</a>
+        <a href="https://paypal.me/piclapp" target="_blank" rel="noopener" class="support-btn">PayPal</a>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -177,9 +254,13 @@
         <div class="footer-links">
           <h4>Links</h4>
           <ul>
-            <li><a href="#how">How It Works</a></li>
             <li><a href="#features">Features</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#export">Export</a></li>
             <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="#support">Support ❤️</a></li>
             <li><a href="mailto:suharev.works@gmail.com">Contact</a></li>
           </ul>
         </div>
