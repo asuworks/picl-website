@@ -58,9 +58,9 @@
 
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="/" class="nav-brand">
-        <img src="assets/branding/pickle_logo_small.png" alt="PICL">
-        PICL
+      <a href="https://asuworks.github.io/picl-website/index.html" class="nav-brand">
+        <img src="assets/branding/pickle_logo_small.png" alt="picl">
+        picl
       </a>
       <div class="nav-right">
         <ul class="nav-links" id="navLinks">
@@ -70,7 +70,7 @@
           <li><a href="#export">Export</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="terms.html">Terms</a></li>
-          <li><a href="#support">Support ❤️</a></li>
+          <li><a href="#support">Support 🍺</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -99,7 +99,7 @@
         </svg>
         <span>Gemini</span>
       </div>
-      <a href="#" class="play-btn" id="playStoreLink">
+      <a href="https://play.google.com/store/apps/details?id=com.asuworks.picl" class="play-btn" id="playStoreLink">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.218-.72.61-.92zM14.5 12.707l2.55 2.55-8.1 4.63 5.55-7.18zM17.8 9.95L14.5 11.293 8.95 4.113l8.1 4.63.75.43zM21.78 11.29c.48.28.72.68.72 1.11s-.24.83-.72 1.11l-2.58 1.49-2.93-2.93 2.93-2.93 2.58 1.15z"/></svg>
         Get it on Google Play
       </a>
@@ -160,14 +160,14 @@
   <section class="info-section" id="setup">
     <div class="container info-content">
       <h2>Getting your Gemini API key</h2>
-      <p>PICL uses Google's Gemini AI to generate listings. You'll need a free API key to get started.</p>
+      <p>picl uses Google's Gemini AI to generate listings. You'll need a free API key to get started.</p>
       <ol>
         <li>Go to <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a></li>
         <li>Sign in with your Google account</li>
         <li>Click <strong>Create API key</strong></li>
         <li>Select any Google Cloud project (or create a new one)</li>
         <li>Copy the generated key</li>
-        <li>Open PICL, go to <strong>Settings</strong>, and paste your key</li>
+        <li>Open picl, go to <strong>Settings</strong>, and paste your key</li>
       </ol>
       <p>The free tier is generous and sufficient for personal use. Your key is stored encrypted on your device using Android's secure keystore and is only sent directly to Google's API — never to us or any third party.</p>
       <p>You can check your usage and quota anytime at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">AI Studio</a>.</p>
@@ -216,24 +216,24 @@
   <section class="info-section alt" id="export">
     <div class="container info-content">
       <h2>Google Drive export</h2>
-      <p>When you export listings, PICL uploads images to Google Drive and appends listing data to a Google Sheets spreadsheet — all within your own Google account.</p>
+      <p>When you export listings, picl uploads images to Google Drive and appends listing data to a Google Sheets spreadsheet — all within your own Google account.</p>
       <h3>Minimal permissions</h3>
-      <p>PICL requests only the <code>drive.file</code> scope. This means it can <strong>only access files it created</strong> — it cannot read, modify, or even see any other files in your Drive. This is the most restrictive Drive scope available.</p>
+      <p>picl requests only the <code>drive.file</code> scope. This means it can <strong>only access files it created</strong> — it cannot read, modify, or even see any other files in your Drive. This is the most restrictive Drive scope available.</p>
       <h3>What gets created</h3>
       <ul>
-        <li>A <strong>PICL</strong> folder in your Drive containing uploaded item photos</li>
-        <li>A <strong>PICL Listings</strong> spreadsheet with columns: title, description, price, condition, category, city, neighborhood, zip, and image links</li>
+        <li>A <strong>picl</strong> folder in your Drive containing uploaded item photos</li>
+        <li>A <strong>picl Listings</strong> spreadsheet with columns: title, description, price, condition, category, city, neighborhood, zip, and image links</li>
       </ul>
       <h3>No data collection</h3>
-      <p>PICL has no backend servers. We do not collect, store, or have access to any of your data — not your photos, not your listings, not your Google account information. All communication happens directly between your device and Google's APIs over encrypted HTTPS connections. Your Google credentials are managed entirely by Google's sign-in SDK and are never stored or transmitted by PICL.</p>
+      <p>picl has no backend servers. We do not collect, store, or have access to any of your data — not your photos, not your listings, not your Google account information. All communication happens directly between your device and Google's APIs over encrypted HTTPS connections. Your Google credentials are managed entirely by Google's sign-in SDK and are never stored or transmitted by picl.</p>
       <p>You can revoke access at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
     </div>
   </section>
 
   <section class="info-section" id="support">
     <div class="container info-content" style="text-align: center;">
-      <h2>Support PICL ❤️</h2>
-      <p>If PICL saves you time, consider buying the developer a coffee.</p>
+      <h2>Support picl 🍺</h2>
+      <p>If picl saves you time, consider buying the developer a beer.</p>
       <div class="support-links">
         <a href="https://ko-fi.com/piclapp" target="_blank" rel="noopener" class="support-btn">Ko-fi</a>
         <a href="https://paypal.me/piclapp" target="_blank" rel="noopener" class="support-btn">PayPal</a>
@@ -246,10 +246,10 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">
-            <img src="assets/branding/pickle_logo_small.png" alt="PICL">
-            PICL
+            <img src="assets/branding/pickle_logo_small.png" alt="picl">
+            picl
           </div>
-          <p class="footer-desc">AI-powered listing generator for Android. By Anton Suharev.</p>
+          <p class="footer-desc">AI-powered listing generator for Android. by Anton Suharev.</p>
         </div>
         <div class="footer-links">
           <h4>Links</h4>
@@ -260,7 +260,7 @@
             <li><a href="#export">Export</a></li>
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="terms.html">Terms</a></li>
-            <li><a href="#support">Support ❤️</a></li>
+            <li><a href="#support">Support 🍺</a></li>
             <li><a href="mailto:suharev.works@gmail.com">Contact</a></li>
           </ul>
         </div>
