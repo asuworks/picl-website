@@ -1,6 +1,6 @@
-# PICL Website
+# picl Website
 
-Static presentation website for PICL — an AI-powered Android app that turns photos and voice memos into marketplace listings using Gemini AI.
+Static presentation website for picl — an AI-powered Android app that turns photos and voice memos into marketplace listings using Gemini AI.
 
 **Developer:** Anton Suharev (suharev.works@gmail.com)
 **Repo:** git@github.com:asuworks/picl-website.git (branch: master)
@@ -119,7 +119,7 @@ All three pages (index, privacy, terms) must have identical nav links and footer
 
 ## Things to Remember
 
-- PICL stands for "Photos Into Selling Listings" (NOT Craigslist — changed deliberately)
+- picl stands for "Photos Into Selling Listings" (NOT Craigslist — changed deliberately)
 - The mascot is called "Pickle" — a green felt-textured muppet with a camera
 - The Play Store button href is still a placeholder (`#`) — update when published
 - The app uses `drive.file` scope (most restrictive) — this is a key selling point
