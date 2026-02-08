@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICL — Snap it, Say it, Sell it</title>
+  <meta name="description" content="Turn photos and voice memos into marketplace listings with AI.">
+  <link rel="icon" type="image/png" href="assets/branding/pickle_logo_small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Auto-detect theme before paint
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="assets/branding/pickle_logo_small.png" alt="PICL">
+        PICL
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <img src="assets/branding/pickle_camera.png" alt="Pickle mascot" class="hero-mascot">
+      <p class="acronym">Photos Into Selling Listings</p>
+      <h1>Snap it, say it, sell it.</h1>
+      <p class="sub">
+        Photograph items. Record a voice memo. Let Gemini AI write the listing. Export to Google Sheets.
+      </p>
+      <div class="powered-by">
+        <span>Powered by</span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L8.5 8.5 2 12l6.5 3.5L12 22l3.5-6.5L22 12l-6.5-3.5L12 2z" fill="url(#gemini-g)"/>
+          <defs><linearGradient id="gemini-g" x1="2" y1="2" x2="22" y2="22"><stop stop-color="#4285F4"/><stop offset=".33" stop-color="#9B72CB"/><stop offset=".66" stop-color="#D96570"/><stop offset="1" stop-color="#D96570"/></linearGradient></defs>
+        </svg>
+        <span>Gemini</span>
+      </div>
+      <a href="#" class="play-btn" id="playStoreLink">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.218-.72.61-.92zM14.5 12.707l2.55 2.55-8.1 4.63 5.55-7.18zM17.8 9.95L14.5 11.293 8.95 4.113l8.1 4.63.75.43zM21.78 11.29c.48.28.72.68.72 1.11s-.24.83-.72 1.11l-2.58 1.49-2.93-2.93 2.93-2.93 2.58 1.15z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <section class="pipeline" id="how">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Capture</h3>
+          <p>Photos + voice memos. Works offline.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Process</h3>
+          <p>Gemini AI generates title, price, description.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Export</h3>
+          <p>Images to Drive, data to Sheets.</p>
+        </div>
+      </div>
+      <div class="screenshots-track screenshots-light">
+        <div class="screenshot-item"><img src="assets/screenshots/light/1.jpg" alt="Welcome screen" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/light/2.jpg" alt="Capture with voice recording" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/light/3.jpg" alt="Photos and voice notes" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/light/4.jpg" alt="Processing and status view" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/light/6.jpg" alt="Settings" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/light/7.jpg" alt="Custom AI instructions" loading="lazy"></div>
+      </div>
+      <div class="screenshots-track screenshots-dark">
+        <div class="screenshot-item"><img src="assets/screenshots/dark/1.jpg" alt="Welcome screen" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/dark/2.jpg" alt="Capture with voice recording" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/dark/3.jpg" alt="Photos and voice notes" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/dark/4.jpg" alt="Processing and status view" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/dark/6.jpg" alt="Settings" loading="lazy"></div>
+        <div class="screenshot-item"><img src="assets/screenshots/dark/7.jpg" alt="Custom AI instructions" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlights" id="features">
+    <div class="container">
+      <h2>Built to save you time</h2>
+      <p>Less typing, more selling.</p>
+      <div class="highlights-grid">
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- crosshair / point -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+          </div>
+          <h3>Photo and voice capture</h3>
+          <p>Photograph the item. Record a voice note with details the camera can't see. No keyboard needed.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- sparkles / AI -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>
+          </div>
+          <h3>AI listing generation</h3>
+          <p>Gemini sees your photos, hears your voice, and generates title, description, price, condition, and category.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- layers / batch -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Batch processing</h3>
+          <p>Capture 50 items at a garage sale. Process them all at once. Export every listing in a single tap.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- sliders / customize -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          </div>
+          <h3>Custom AI instructions</h3>
+          <p>Custom AI instructions let you set the tone. Casual, detailed, whatever fits your marketplace.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- wifi-off / offline -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>Offline mode</h3>
+          <p>Capture at the storage unit, the yard sale, anywhere with no signal. Process later when you're back online.</p>
+        </div>
+        <div class="hl">
+          <div class="hl-icon">
+            <!-- shield / privacy -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3>Private by design</h3>
+          <p>No servers, no analytics, no tracking. Everything goes straight to your Google Drive and Sheets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/branding/pickle_logo_small.png" alt="PICL">
+            PICL
+          </div>
+          <p class="footer-desc">AI-powered listing generator for Android. By Anton Suharev.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="mailto:suharev.works@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Anton Suharev</div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Listen for OS theme changes
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+
+    // Hamburger
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() { navLinks.classList.remove('open'); });
+    });
+  </script>
+
+</body>
+</html>
